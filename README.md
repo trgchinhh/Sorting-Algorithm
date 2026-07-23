@@ -2,9 +2,34 @@
     <img height="300" src="img/logo.png"/>
 </p>
 
-## Sorting Algorithm 
+## 📑 Mục lục
+
+- [Giới thiệu](#-sorting-algorithm)
+- [Video demo](#-video-demo)
+<!-- - [Danh sách thuật toán](#-danh-sách-thuật-toán) -->
+  - [Bubble Sort](#bubble-sort)
+  - [Selection Sort](#selection-sort)
+  - [Insertion Sort](#insertion-sort)
+  - [Binary Insertion Sort](#binary-insertion-sort)
+  - [Shaker Sort](#shaker-sort)
+  - [Shell Sort](#shell-sort)
+  - [Quick Sort](#quick-sort)
+  - [Merge Sort](#merge-sort)
+  - [Heap Sort](#heap-sort)
+  - [Counting Sort](#counting-sort)
+  - [Radix Sort](#radix-sort)
+  - [Bucket Sort](#bucket-sort)
+  - [Flash Sort](#flash-sort)
+  - [Tim Sort](#tim-sort)
+  - [Intro Sort](#intro-sort)
+- [Cách cài đặt](#-cach-cai-dat)
+- [Tác giả](#-tac-gia)
+
+## Sorting Algorithm
 
 Đây là một dự án nhỏ dùng để đo thời gian thực thi của 15 thuật toán sắp xếp phổ biến trong C++, đồng thời cũng là những thuật toán được sử dụng rộng rãi trong nhiều ngôn ngữ lập trình khác. Dự án hướng đến những người mới học lập trình, giúp họ có cái nhìn tổng quan và dễ dàng tiếp cận các thuật toán sắp xếp thông qua việc so sánh hiệu năng thực tế.
+
+## Video demo
 
 ![demo](docs/demo.gif)
 
