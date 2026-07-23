@@ -1,6 +1,12 @@
-# Sorting Algorithm 
+<p align="center">
+    <img height="300" src="img/logo.png"/>
+</p>
+
+## Sorting Algorithm 
 
 Đây là một dự án nhỏ dùng để đo thời gian thực thi của 15 thuật toán sắp xếp phổ biến trong C++, đồng thời cũng là những thuật toán được sử dụng rộng rãi trong nhiều ngôn ngữ lập trình khác. Dự án hướng đến những người mới học lập trình, giúp họ có cái nhìn tổng quan và dễ dàng tiếp cận các thuật toán sắp xếp thông qua việc so sánh hiệu năng thực tế.
+
+![demo](docs/demo.mp4)
 
 ---
 
@@ -257,3 +263,25 @@ Intro Sort (Introspective Sort) là thuật toán lai kết hợp giữa **Quick
 **Ưu điểm:** kết hợp được ưu điểm của nhiều thuật toán, có hiệu năng rất cao, ổn định và luôn đảm bảo độ phức tạp `O(n log n)` trong trường hợp xấu. Đây cũng là thuật toán được `std::sort()` của thư viện chuẩn C++ sử dụng (trên hầu hết các trình biên dịch hiện đại).
 
 **Nhược điểm:** cài đặt phức tạp hơn nhiều so với các thuật toán sắp xếp cơ bản và khó tự triển khai nếu chưa nắm vững các thuật toán thành phần.
+
+---
+
+## Cách cài đặt 
+Yêu cầu Msys2/Mingw64 C++ 14 trở lên
+```bash
+git clone https://github.com/trgchinhh/sorting-algorithm.git
+cd sorting-algorithm
+g++ ./main.cpp -o ./main.exe
+./main.exe
+```
+
+---
+
+## Tác giả
+**Nguyễn Trường Chinh (NTC++)**<br>
+**Ủng hộ:** [Nếu bạn thấy hữu ích hãy ủng hộ mình](https://github.com/sponsors/trgchinhh)<br>
+**GitHub:** [https://github.com/trgchinhh](https://github.com/trgchinhh)
+
+---
+
+> 📌 Dự án nhỏ được phát triển với mục đích học tập và nghiên cứu. Mọi góp ý và đóng góp đều được hoan nghênh. Nếu thấy dự án này thú vị hoặc hữu ích cho bạn, hãy tặng 1 sao cho repo này !!!
