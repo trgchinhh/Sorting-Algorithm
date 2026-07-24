@@ -44,7 +44,7 @@ void destroy(Nodeptr root) {
     }
     destroy(root->left);
     destroy(root->right);
-    delete root;
+    delete root; 
 }
 
 void tree_sort(vector<int>& a) {
