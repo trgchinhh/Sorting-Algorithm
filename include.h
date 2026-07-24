@@ -15,3 +15,4 @@
 #include "sort_algorithm/intro_sort.h"
 #include "sort_algorithm/comb_sort.h"
 #include "sort_algorithm/gnome_sort.h"
+#include "sort_algorithm/tree_sort.h"

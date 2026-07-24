@@ -1,7 +1,7 @@
 // TÁC GIẢ: TRƯỜNG CHINH (NTC++)
 // GITHUB: GITHUB.COM/TRGCHINHH
 
-// CHƯƠNG TRÌNH ĐO THỜI GIAN CHẠY CỦA 15 THUẬT TOÁN SẮP XẾP NỔI TIẾNG HIỆN NAY TRONG C++
+// CHƯƠNG TRÌNH ĐO THỜI GIAN CHẠY CỦA 18 THUẬT TOÁN SẮP XẾP NỔI TIẾNG HIỆN NAY TRONG C++
 
 //   _____  ____  _____ _______            _      _____  ____  _____  _____ _______ _    _ __  __ 
 //  / ____|/ __ \|  __ \__   __|     /\   | |    / ____|/ __ \|  __ \|_   _|__   __| |  | |  \/  |
@@ -55,7 +55,8 @@ int main(){
         else if(choice == 15)       intro_sort(a);
         else if(choice == 16)       comb_sort(a);
         else if(choice == 17)       gnome_sort(a);
-        else if(choice == 18) {
+        else if(choice == 18)       tree_sort(a);
+        else if(choice == 19) {
             cout << " Goodbye !" << endl;
             exit(0);
         }

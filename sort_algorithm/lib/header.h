@@ -85,7 +85,8 @@ inline void print_menu() {
         " [15] Intro Sort",
         " [16] Comb sort",
         " [17] Gnome sort",
-        " [18] Exit Program"
+        " [18] Tree sort",
+        " [19] Exit Program"
     };
     for (string s : menuboard)
         cout << s << endl;
