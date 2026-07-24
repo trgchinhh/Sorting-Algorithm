@@ -16,13 +16,13 @@
 
 ## Sorting Algorithm
 
-Đây là một dự án nhỏ dùng để đo thời gian thực thi của 15 thuật toán sắp xếp phổ biến trong C++, đồng thời cũng là những thuật toán được sử dụng rộng rãi trong nhiều ngôn ngữ lập trình khác. Dự án hướng đến những người mới học lập trình, giúp họ có cái nhìn tổng quan và dễ dàng tiếp cận các thuật toán sắp xếp thông qua việc so sánh hiệu năng thực tế.
+Đây là một dự án nhỏ dùng để đo thời gian thực thi của 17 thuật toán sắp xếp phổ biến trong C++, đồng thời cũng là những thuật toán được sử dụng rộng rãi trong nhiều ngôn ngữ lập trình khác. Dự án hướng đến những người mới học lập trình, giúp họ có cái nhìn tổng quan và dễ dàng tiếp cận các thuật toán sắp xếp thông qua việc so sánh hiệu năng thực tế.
 
 ![demo](docs/demo.gif)
 
 ---
 
-## Danh sách 15 thuật toán sắp xếp
+## Danh sách 17 thuật toán sắp xếp
 
 | STT | Thuật toán | Tính ổn định |
 |:---:|------------|:------------:|
@@ -41,6 +41,8 @@
 | 13 | [Flash Sort](#13-flash-sort) | Không ổn định |
 | 14 | [Tim Sort](#14-tim-sort) | Ổn định |
 | 15 | [Intro Sort](#15-intro-sort) | Không ổn định |
+| 16 | [Comb Sort](#16-comb-sort) | Không ổn định |
+| 17 | [Gnome Sort](#17-gnome-sort) | Ổn định |
 
 ---
 
@@ -300,6 +302,40 @@ Intro Sort (Introspective Sort) là thuật toán lai kết hợp giữa **Quick
 
 ---
 
+## 16. Comb Sort
+
+Comb Sort là phiên bản cải tiến của **Bubble Sort**. Thay vì chỉ so sánh hai phần tử liền kề, thuật toán sử dụng một khoảng cách (*gap*) giữa các phần tử để loại bỏ nhanh các phần tử nhỏ nằm ở cuối mảng (thường được gọi là *turtles*). Khoảng cách này sẽ giảm dần theo mỗi vòng lặp cho đến khi còn `1`, lúc đó thuật toán hoạt động tương tự Bubble Sort.
+
+| Độ phức tạp | Giá trị |
+|-------------|:-------:|
+| Trường hợp trung bình | `O(n²)` |
+| Trường hợp tốt nhất | `O(n log n)` |
+| Trường hợp xấu nhất | `O(n²)` |
+| Độ phức tạp không gian | `O(1)` |
+
+**Ưu điểm:** đơn giản, dễ cài đặt, nhanh hơn Bubble Sort trên hầu hết các bộ dữ liệu và không yêu cầu thêm bộ nhớ.
+
+**Nhược điểm:** vẫn có độ phức tạp `O(n²)` trong trường hợp xấu nhất và không phù hợp với tập dữ liệu lớn.
+
+---
+
+## 17. Gnome Sort
+
+Gnome Sort là thuật toán sắp xếp đơn giản hoạt động tương tự **Insertion Sort** nhưng sử dụng cơ chế đổi chỗ liên tiếp. Thuật toán duyệt mảng từ trái sang phải, nếu hai phần tử đúng thứ tự thì tiếp tục tiến lên, ngược lại sẽ đổi chỗ và lùi lại một bước để kiểm tra tiếp cho đến khi toàn bộ mảng được sắp xếp.
+
+| Độ phức tạp | Giá trị |
+|-------------|:-------:|
+| Trường hợp trung bình | `O(n²)` |
+| Trường hợp tốt nhất | `O(n)` |
+| Trường hợp xấu nhất | `O(n²)` |
+| Độ phức tạp không gian | `O(1)` |
+
+**Ưu điểm:** rất dễ cài đặt, không cần cấu trúc dữ liệu phụ, là thuật toán **stable** và hoạt động tốt trên các mảng gần như đã được sắp xếp.
+
+**Nhược điểm:** hiệu năng thấp trên dữ liệu lớn, số lần hoán đổi nhiều hơn Insertion Sort nên ít được sử dụng trong thực tế.
+
+---
+
 ## Cách cài đặt 
 Yêu cầu Msys2/Mingw64 C++ 14 trở lên
 ```bash
@@ -313,6 +349,7 @@ g++ ./main.cpp -o ./main.exe
 
 ## Tác giả
 **Nguyễn Trường Chinh (NTC++)**<br>
+**Trần Minh Gia Bảo (bổ sung)**<br>
 **Ủng hộ:** [Nếu bạn thấy hữu ích hãy ủng hộ mình](https://github.com/sponsors/trgchinhh)<br>
 **GitHub:** [https://github.com/trgchinhh](https://github.com/trgchinhh)
 

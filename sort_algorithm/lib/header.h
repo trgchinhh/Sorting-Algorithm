@@ -83,7 +83,9 @@ inline void print_menu() {
         " [13] Flash Sort",
         " [14] Tim Sort",
         " [15] Intro Sort",
-        " [16] Exit Program"
+        " [16] Comb sort",
+        " [17] Gnome sort",
+        " [18] Exit Program"
     };
     for (string s : menuboard)
         cout << s << endl;

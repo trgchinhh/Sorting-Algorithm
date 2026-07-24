@@ -53,7 +53,9 @@ int main(){
         else if(choice == 13)       flash_sort(a);
         else if(choice == 14)       tim_sort(a);
         else if(choice == 15)       intro_sort(a);
-        else if(choice == 16) {
+        else if(choice == 16)       comb_sort(a);
+        else if(choice == 17)       gnome_sort(a);
+        else if(choice == 18) {
             cout << " Goodbye !" << endl;
             exit(0);
         }

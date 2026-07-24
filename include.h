@@ -13,3 +13,5 @@
 #include "sort_algorithm/bucket_sort.h"
 #include "sort_algorithm/tim_sort.h"
 #include "sort_algorithm/intro_sort.h"
+#include "sort_algorithm/comb_sort.h"
+#include "sort_algorithm/gnome_sort.h"
