@@ -3,26 +3,43 @@
 
 #include "lib//header.h"
 
-int partition(vector<int>& a, int left, int right){
-    int pivot = a[right];
-    int i = left - 1;
+// int partition(vector<int>& a, int left, int right){
+//     int pivot = a[right];
+//     int i = left - 1;
 
-    for(int j = left; j < right; j++){
-        if(a[j] <= pivot){
-            i++;
+//     for(int j = left; j < right; j++){
+//         if(a[j] <= pivot){
+//             i++;
+//             swap(a[i], a[j]);
+//         }
+//     }
+//     swap(a[i+1], a[right]);
+//     return i + 1;
+// }
+
+// void quick_sort(vector<int>& a, int left, int right){
+//     if(left < right){
+//         int pivot = partition(a, left, right);
+//         quick_sort(a, left, pivot - 1);
+//         quick_sort(a, pivot + 1, right);
+//     }
+// }
+
+void quicksort(vector<int>& a, int left, int right){
+    int i = left; 
+    int j = right;
+    int pv = a[(left + right)/2];
+    while(i <= j){
+        while(a[i] < pv) i++;
+        while(a[j] > pv) j--;
+        if(i <= j){
             swap(a[i], a[j]);
+            i++;
+            j--;
         }
     }
-    swap(a[i+1], a[right]);
-    return i + 1;
-}
-
-void quick_sort(vector<int>& a, int left, int right){
-    if(left < right){
-        int pivot = partition(a, left, right);
-        quick_sort(a, left, pivot - 1);
-        quick_sort(a, pivot + 1, right);
-    }
+    if(left < j) quicksort(a, left, j);
+    if(i < right) quicksort(a, i, right);
 }
 
 #endif
